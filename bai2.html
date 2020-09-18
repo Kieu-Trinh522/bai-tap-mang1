@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers= [3,2,4,5,7,1,8,6,9];
+    for (let i = 1; i <numbers.length ; i++) {
+        if((numbers[i-1]%2===0)&&(numbers[i]%2===0)){
+            numbers.splice(i,0,"-");
+        }
+    }
+    document.write(numbers.join())
+</script>
+</body>
+</html>
